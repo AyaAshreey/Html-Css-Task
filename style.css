@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ===============  1. HEADER   ================ */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+}
+
+header a:hover {
+    background-color: #ffffffcc;
+    color: black;
+}
+
+.logo {
+    background-color: #009688;
+}
+
+.logo:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.fa-magnifying-glass {
+    color: #fff;
+    padding-top: 13px;
+    padding-right: 20px;
+    margin-left: 13px;
+    font-size: 20px;
+
+}
+
+.fa-house-user {
+    font-size: 13px;
+}
+
+.search-container:hover {
+    background-color: #009688;
+}
+
+/* .fa-magnifying-glass:hover{
+   
+} */
+.fa-house-user {
+    margin-right: 5px;
+}
+
+.parent-link {
+    background-color: rgb(82, 79, 79);
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 360px;
+    visibility: hidden;
+
+}
+
+.drop:hover+.parent-link {
+    visibility: visible;
+
+}
+
+/* ===============  2. Background Image   ================ */
+/* .back-img {
+    position: relative;
+} */
+
+.back-img {
+    width: 100%;
+    height: 500px;
+}
+
+.learn {
+    color: #fff;
+    background-color: black;
+    position: absolute;
+    bottom: 170px;
+    right: 1100px;
+    font-weight: 500;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.learn:hover {
+    background-color: #009688;
+}
+
+/* ===============  3. OUR TEAM   ================ */
+.team-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team-title h2 {
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 100px 100px;
+}
+
+.flex img {
+    border-radius: 50%;
+}
+
+.division {
+    padding: 10px;
+    text-align: center;
+}
+
+.division h3 {
+    margin: 15px;
+}
+
+/* ====================  4. Our Work  ===================== */
+.gray {
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer {
+    background-color: #fff;
+    height: 360px;
+    width: 23%;
+    line-height: 30px;
+}
+
+.our-work {
+    width: 25%;
+    color: white;
+    line-height: 24px;
+}
+
+.our-work h3 {
+    margin-bottom: 20px;
+}
+
+.snow {
+    height: 160px;
+    width: 100%;
+}
+
+.customer h3,
+.customer p {
+    padding-left: 20px;
+}
+
+/* ====================  5. pricing  ===================== */
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.pricing-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pricing-title h2 {
+    margin-bottom: 20px;
+}
+
+.basic {
+    border: 3px solid;
+    width: 400px;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid rgb(211, 206, 206);
+
+}
+
+.basic:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.basic h4 {
+    color: #fff;
+    background-color: black;
+}
+
+.basic hr {
+    width: 100%;
+}
+
+.basic p {
+    padding: 15px;
+}
+
+.basic h4 {
+    padding: 25px;
+}
+
+.basic button {
+    all: unset;
+    padding: 10px;
+    margin: 15px;
+    width: 100px;
+    background-color: teal;
+    color: #fff;
+}
+
+.basic button:hover {
+    background-color: rgb(156, 153, 153);
+    cursor: pointer;
+}
+
+/* ====================  6. contact  ===================== */
+.sec-contact {
+    background-color: #f0f0f0 !important;
+    display: flex;
+    padding: 40px;
+}
+
+.contact {
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.contact hr {
+    width: 85px;
+    height: 5px;
+    background-color: #009688;
+}
+
+.fa-map-marker,
+.fa-phone,
+.fa-regular {
+    color: #009688;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.sign-form {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    line-height: 2;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.sign-form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    height: 30px;
+    position: relative;
+}
+
+.check-inpt {
+    position: relative;
+    top: 6px;
+    width: 20px !important;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.check-inpt:hover {
+    background-color: #009688;
+
+
+}
+
+/* ====================  6. section img  ===================== */
+
+
+.sec-img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* ====================  7. footer  ===================== */
+
+
+footer {
+    padding: 50px;
+    background-color: black;
+    position: relative;
+
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.icon-container {
+    text-align: center;
+    margin-top: 20px;
+
+    margin-bottom: 40px;
+}
+
+.icon-container a {
+    text-decoration: none;
+}
+
+.icon {
+    color: #009688;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: #ffffffcc;
+}
+
+.arrow {
+    position: relative;
+}
+
+.fa-circle-chevron-up {
+    font-size: 30px;
+    color: #ffffffcc;
+    position: absolute;
+    left: 1200px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.fa-circle-chevron-up:hover {
+    color: black;
+    background-color: #ffffffcc;
+}
